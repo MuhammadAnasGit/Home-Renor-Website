@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/Home.css">
+    <link rel="stylesheet" href="styles/General.css">
+    <link rel="stylesheet" href="styles/Front.css">
+    <link rel="icon" href="Logo/Logo.png">
+    <style>
+        body {
+            opacity: 0;
+            filter: blur(5px); /* Start blurred */
+            animation: fadeInBlur 5s forwards; /* Fade and clear */
+        }
+
+        @keyframes fadeInBlur {
+            to {
+                opacity: 1; /* End visible */
+                filter: blur(0); /* End clear */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+
+    <header>
+        <img class="logo-header" src="Logo/Header.jpg" alt="Header Logo">
+        <div class="all-buttons">
+          <button class="button" onclick="window.location.href='Home.html';">Home</button>
+          <button class="button" onclick="window.location.href='Services.html';">Services</button>   
+          <button class="button" onclick="window.location.href='About.html';">About</button>
+          <button class="button" onclick="window.location.href='Contact.html';">Contact</button>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Images/1.png" style="width:100%">
+            <div class="text">Dry Wall Installation</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/2.jpg" style="width:100%">
+            <div class="text">Masonry Repair</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/3.jpg" style="width:100%">
+            <div class="text">Outdoor Tile Installation</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/4.jpg" style="width:100%">
+            <div class="text">Woord Framing</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/5.jpeg" style="width:100%">
+            <div class="text">Bathroom Remodeling</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/6.jpeg" style="width:100%">
+            <div class="text">Tiling</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/7.jpg" style="width:100%">
+            <div class="text">Wall Modeling</div>
+        </div>
+        <!-- Other slides here -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+    
+    </div>
+    
+    <script src="Scripts/slide.js"></script>
+
+    <footer class="footer">
+        <p>Contact Us: <a href="mailto:info@example.com">HomeReno@gmail.com</a> | Phone: <a href="tel:+1234567890">+1 224 123 1234</a></p>
+    </footer>
+
+</body>
+</html>
